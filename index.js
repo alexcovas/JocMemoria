@@ -16,8 +16,8 @@ document.getElementById("start").addEventListener("click", iniciar);
 document.querySelectorAll(".color").forEach(button => {
     button.addEventListener("click", (e) => {
         if (!bloquejar) {  // Si no està bloquejat, permetem que el jugador faci una acció
-            let colorSeleccionat = e.target.dataset.color;  // Obtenim el color seleccionat pel jugador
-            respostaJugador.push(colorSeleccionat);  // Afegim el color a les respostes del jugador
+            let colorPitjat = e.target.dataset.color;  // Obtenim el color seleccionat pel jugador
+            respostaJugador.push(colorPitjat);  // Afegim el color a les respostes del jugador
             verificarSequencia();  // Comprovem si la seqüència és correcta
         }
     });
