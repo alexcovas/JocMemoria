@@ -44,10 +44,10 @@ async function mostrar_colors(temps) {
     bloquejar = true;
     for (let color of sequencia) {  // Iterem per cada color de la seqüència
         console.log("Mostrant color:", color);  // Mostrem el color actual per consola
-        let mostrador = document.querySelector(".mostrador");  // Obtenim l'element que mostra el color
-        mostrador.style.backgroundColor = color;  // Canviem el fons de l'element al color actual
+        let memoria = document.querySelector(".memoria");  // Obtenim l'element que mostra el color
+        memoria.style.backgroundColor = color;  // Canviem el fons de l'element al color actual
         await esperar(temps);  // Esperem un temps determinat abans de passar al següent color
-        mostrador.style.backgroundColor = "white";  // Restablim el color de fons a blanc
+        memoria.style.backgroundColor = "white";  // Restablim el color de fons a blanc
         await esperar(500);  // Esperem mig segon abans de mostrar el següent color
     }
     bloquejar = false;  // Permetem que el jugador faci clic després de mostrar tota la seqüència
