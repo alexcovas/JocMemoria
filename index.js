@@ -34,8 +34,8 @@ function iniciar() {
 
 // Funció per afegir un color aleatori a la seqüència
 function afegirColor() {
-    numero = Math.floor(Math.random() * colors.length);  // Generem un nombre aleatori per escollir un color
-    sequencia.push(colors[numero]);  // Afegim el color seleccionat a la seqüència
+    nombre = Math.floor(Math.random() * colors.length);  // Generem un nombre aleatori per escollir un color
+    sequencia.push(colors[nombre]);  // Afegim el color seleccionat a la seqüència
     console.log("Seqüència actual:", sequencia);  // Mostrem per consola la seqüència actual
 }
 
