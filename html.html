@@ -1,34 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joc de Seqüències de Colors</title>
+    <title>Simon diu - 8 colors</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-
 <div class="container">
-    <h1>Joc de Seqüències de Colors</h1>
+    <h1>Simon diu</h1>
+    <div class="mostrador memoria"></div>
 
-    <button id="start" class="btn">Començar Joc</button>
-
-    <div class="memoria"></div>
+    <button class="btn" id="start">Començar</button>
 
     <div class="colors">
-        <button class="color" data-color="red" style="background-color: red;"></button>
-        <button class="color" data-color="yellow" style="background-color: yellow;"></button>
-        <button class="color" data-color="blue" style="background-color: blue;"></button>
-        <button class="color" data-color="black" style="background-color: black;"></button>
-        <button class="color" data-color="orange" style="background-color: orange;"></button>
-        <button class="color" data-color="purple" style="background-color: purple;"></button>
-        <button class="color" data-color="green" style="background-color: green;"></button>
-        <button class="color" data-color="gray" style="background-color: gray;"></button>
+        <button class="color" style="background-color:red;" data-color="red"></button>
+        <button class="color" style="background-color:yellow;" data-color="yellow"></button>
+        <button class="color" style="background-color:blue;" data-color="blue"></button>
+        <button class="color" style="background-color:black;" data-color="black"></button>
+        <button class="color" style="background-color:orange;" data-color="orange"></button>
+        <button class="color" style="background-color:purple;" data-color="purple"></button>
+        <button class="color" style="background-color:green;" data-color="green"></button>
+        <button class="color" style="background-color:gray;" data-color="gray"></button>
     </div>
 
-    <!-- Mensaje que indica el estado del juego -->
     <div id="missatge"></div>
 </div>
 

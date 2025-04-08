@@ -5,8 +5,8 @@ const colors = ['red', 'yellow', 'blue', 'black', 'orange', 'purple', 'green', '
 let sequencia = [];          // La seqüència que ha de seguir el jugador
 let respostaJugador = [];    // Les respostes del jugador
 let bloquejar = true;        // Variable per bloquejar el jugador fins que es mostri la seqüència
-let sonidoCorrecto = new Audio('correct-ding.mp3');
-let sonidoError = new Audio('error-fallo-1.mp3');
+let sonidoCorrecto = new Audio('sons/victoria.mp3');
+let sonidoError = new Audio('sons/errorr.mp3');
 
 
 // Quan es fa clic al botó "start", s'inicia el joc
