@@ -10,7 +10,7 @@ let sonidoError = new Audio('error-fallo-1.mp3');
 
 
 // Quan es fa clic al botó "start", s'inicia el joc
-document.getElementById("start").addEventListener("click", inici);
+document.getElementById("start").addEventListener("click", iniciar);
 
 // Afegim un esdeveniment a cada botó de color per capturar el clic
 document.querySelectorAll(".color").forEach(button => {
@@ -24,7 +24,7 @@ document.querySelectorAll(".color").forEach(button => {
 });
 
 // Funció per iniciar el joc
-function inici() {
+function iniciar() {
     sequencia = [];         // Reiniciem la seqüència
     respostaJugador = [];   // Reiniciem les respostes del jugador
     bloquejar = true;       // Bloquegem el jugador fins que es mostri la seqüència
