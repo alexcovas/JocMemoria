@@ -61,7 +61,7 @@ function esperar(milliseconds) {
 
 // Funció per verificar si la seqüència del jugador és correcta
 function verificarSequencia() {
-    const mensajeElemento = document.getElementById('missatge');  // Obtenim l'element on es mostrarà el missatge
+    const missatgeElement = document.getElementById('missatge');  // Obtenim l'element on es mostrarà el missatge
 
     if (respostaJugador.length !== sequencia.length) {
         return;
@@ -70,15 +70,15 @@ function verificarSequencia() {
     // Comprovem si cada element de la seqüència del jugador és igual al de la seqüència correcta
     for (let i = 0; i < sequencia.length; i++) {
         if (respostaJugador[i] !== sequencia[i]) {
-            mensajeElemento.textContent = "Error: Seqüència incorrecta";
-            mensajeElemento.style.color = "red";
+            missatgeElement.textContent = "Error: Seqüència incorrecta";
+            missatgeElement.style.color = "red";
             sonidoError.play();
             return;  // Sortim de la funció si hi ha un error
         }
     }
 
-    mensajeElemento.textContent = "Següent nivell";
-    mensajeElemento.style.color = "green";
+    missatgeElement.textContent = "Següent nivell";
+    missatgeElement.style.color = "green";
     sonidoCorrecto.play();
 
     // Després d'una secuencia correcta, afegim un nou color a la seqüència
